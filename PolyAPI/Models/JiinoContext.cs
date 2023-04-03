@@ -14,7 +14,8 @@ namespace PolyAPI.Models
         }
         public virtual DbSet<User> Users { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseMySQL("Server=localhost; Database=burnfeniks_mgok11; User ID=046351469_mgok11; Password = huI1lM5MP2; Trusted_Connection=False; Integrated Security=False; TrustServerCertificate=True;");
-        
+        {
+
+        }
     }
 }
