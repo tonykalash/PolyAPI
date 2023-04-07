@@ -15,13 +15,13 @@ namespace PolyAPI.Commons.User
 
         public List<UserDTO> GetUserById(int id)
         {
-            List<UserDTO> data = _context.Users
+            List<UserDTO> data = _context.users
                 .Select(
                     x => new UserDTO
                     {
-                        UserId = x.Id,
-                        UserName = x.Name,
-                        UserLogin = x.Login,
+                        UserId = x.user_id,
+                        UserName = x.user_name,
+                        UserLogin = x.user_login,
                     }
                 )
 

@@ -1,16 +1,20 @@
 using Microsoft.EntityFrameworkCore;
 using PolyAPI.Models;
+using PolyAPI.Commons.DTO;
+using PolyAPI.Commons.User;
+using PolyAPI.Interface.User;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddDbContext<JiinoContext>(options =>
+    options.UseMySQL(builder.Configuration.GetConnectionString("dataConnect")));
+builder.Services.AddTransient<IUser, UserClass>();
 // Add services to the container.
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<JiinoContext>(options =>
-    options.UseMySQL(builder.Configuration.GetConnectionString("dataConnect")));
+
 
 var app = builder.Build();
 

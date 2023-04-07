@@ -9,17 +9,17 @@ namespace PolyAPI.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IUser _IUser;
-        public UserController(IUser IUser)
+        private readonly IUser _Iuser;
+        public UserController(IUser Iuser)
         {
-            _IUser = IUser;
+            _Iuser = Iuser;
         }
 
 
         [HttpGet]
        public async Task<ActionResult<List<UserDTO>>> Get(int idUser) 
         {
-            return await Task.FromResult(_IUser.GetUserById(idUser));
+            return await Task.FromResult(_Iuser.GetUserById(idUser));
         }     
     }
 }
