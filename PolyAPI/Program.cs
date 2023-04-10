@@ -5,8 +5,8 @@ using PolyAPI.Commons.User;
 using PolyAPI.Interface.User;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<JiinoContext>(options =>
-    options.UseMySQL(builder.Configuration.GetConnectionString("dataConnect")));
+builder.Services.AddDbContext<polyclinic_kalashnikovContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("dataConnect")));
 builder.Services.AddTransient<IUser, UserClass>();
 // Add services to the container.
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anton\\source\\repos\\PolyAPI\\PolyAPI\\PolyAPI.csproj": {}
+    "C:\\Users\\anton\\Source\\Repos\\tonykalash\\PolyAPI\\PolyAPI\\PolyAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anton\\source\\repos\\PolyAPI\\PolyAPI\\PolyAPI.csproj": {
+    "C:\\Users\\anton\\Source\\Repos\\tonykalash\\PolyAPI\\PolyAPI\\PolyAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anton\\source\\repos\\PolyAPI\\PolyAPI\\PolyAPI.csproj",
+        "projectUniqueName": "C:\\Users\\anton\\Source\\Repos\\tonykalash\\PolyAPI\\PolyAPI\\PolyAPI.csproj",
         "projectName": "PolyAPI",
-        "projectPath": "C:\\Users\\anton\\source\\repos\\PolyAPI\\PolyAPI\\PolyAPI.csproj",
+        "projectPath": "C:\\Users\\anton\\Source\\Repos\\tonykalash\\PolyAPI\\PolyAPI\\PolyAPI.csproj",
         "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anton\\source\\repos\\PolyAPI\\PolyAPI\\obj\\",
+        "outputPath": "C:\\Users\\anton\\Source\\Repos\\tonykalash\\PolyAPI\\PolyAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -55,19 +55,15 @@
               "target": "Package",
               "version": "[6.0.15, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.15, )"
-            },
-            "MySql.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.10, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[6.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
