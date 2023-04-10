@@ -7,21 +7,21 @@ namespace PolyAPI.Commons.User
 {
     public class UserClass : IUser
     {
-        private readonly JiinoContext _context;
-        public UserClass(JiinoContext context)
+        private readonly polyclinic_kalashnikovContext _context;
+        public UserClass(polyclinic_kalashnikovContext context)
         {
             _context = context;
         }
 
         public List<UserDTO> GetUserById(int id)
         {
-            List<UserDTO> data = _context.users
+            List<UserDTO> data = _context.Users
                 .Select(
                     x => new UserDTO
                     {
-                        UserId = x.user_id,
-                        UserName = x.user_name,
-                        UserLogin = x.user_login,
+                        UserId = x.UserId,
+                        UserName = x.UserName,
+                        UserLogin = x.UserLogin,
                     }
                 )
 
